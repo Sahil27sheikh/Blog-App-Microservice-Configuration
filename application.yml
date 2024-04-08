@@ -1,7 +1,8 @@
 eureka:
   instance:
-    prefer-ip-address: true  
+    prefer-ip-address: true # your Spring Boot microservice instructs the Eureka Server to register the microservice using its IP address instead of its hostname.
   client:
-    register-with-eureka: true  
-    fetch-registry: true  
+    register-with-eureka: true # tells your microservice to register itself with the Eureka Server.
+    fetch-registry: true # instructs your microservice to fetch service registry information from the Eureka Server. the value is true because this microservice is a client not a server.
+    service-url:
       defaultZone: http://localhost:8761/eureka

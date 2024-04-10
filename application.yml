@@ -1,6 +1,6 @@
 spring:
-  application: # use to define the name of service.
-    name: POST-SERVICE
+  application:
+    name: default-config
 eureka:
   instance:
     prefer-ip-address: true # your Spring Boot microservice instructs the Eureka Server to register the microservice using its IP address instead of its hostname.
